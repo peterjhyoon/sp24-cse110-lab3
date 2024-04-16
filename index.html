@@ -19,7 +19,7 @@
                 <li><a href="#recruit">Recruitment</a></li>
                 <li><a href="#funding">Funding</a></li>
                 <li>Follow-up Questions</li>
-                <li><a href="#form">Form</a></li>
+                <li><a href="#survey">Form</a></li>
             </ol>
         </nav>
     </div>
@@ -39,6 +39,10 @@
         <br>
         <section id="recruit">
             <h2>Recruiting</h2>
+            <h3>HR Video</h3>
+            <video controls>
+                <source src="src/test_video.mov" type="video/mp4">
+            </video>
             <p>Current <strong>OPEN positions</strong> on the team (bold are to be filled ASAP)</p>
             <ul>
                 <li>ML Engineer</li>
@@ -56,6 +60,12 @@
                 <p>This is some text.</p>
                 <p>Pivot product to take over <em>Y-Combinator</em> and <i>self-invest in ourselves.</i></p>
             </span>
+            <h3>Audio from Meeting with Investors</h3>
+            <p>Below is the audio file from the recording with investors.</p>
+            <audio controls>
+                <source src="src/audio_test.m4a" type="audio/mp4">
+            </audio>
+            <!-- <video src="src/test_video.mov" type="video/mov"></video> -->
         </section>
         <br>
         <div class="follow-up">
@@ -69,11 +79,63 @@
                 A: This guy
                 <img src="src/gpt_img.png" alt="gpt_image">
             </span>
+            
+            <details>
+                <summary>Click to view details!</summary>
+                <p>details</p>
+            </details>
         </div>
     </main>
     <br>
-    <section id="form">
-        <h2>Form</h2>
+    <section id="survey">
+        <h2>Meeting Feedback</h2>
+        <p>Submit feedback/ideas in the form below!</p>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Feedback Form</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name">
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="text" id="email">
+                <br><br>
+                <label for="dob" id="dob">Date of Birth (for verification)</label>
+                <input type="date" id="dob">
+                <br><br>
+                <label for="dept" id="dept">Department:</label>
+                <br>
+                <input type="radio" name="dept" id="dept" value="finance">IT
+                <input type="radio" name="dept" id="dept" value="it">Finance
+                <input type="radio" name="dept" id="dept" value="hr">None
+                <br><br>
+                <label for="city">Office Location:</label>
+                <input type="text" id="city" name="city" list="cities">
+                <datalist id="cities">
+                    <option value="San Diego">
+                    <option value="New York">
+                    <option value="The Moon">
+                    <option value="Mars">
+                    <option value="The Sun">
+                </datalist>
+                <br><br>
+                <label for="check">Are You Human:</label>
+                <input type="checkbox" id="check" name="check">
+                <br><br>
+                <label for="feedback">Feedback:</label><br>
+                <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea>
+                <br><br>
+                <label for="loc">Where are you currently located?</label>
+                <select id="loc" name="loc">
+                    <option value="americas">Americas (North/South)</option>
+                    <option value="asia">Asia</option>
+                    <option value="europe">Europe</option>
+                    <option value="africa">Africa</option>
+                    <option value="oceania">Oceania</option>
+                    <option value="antartica">Antartica</option>
+                </select><br><br>
+            </fieldset>
+            <button type="submit">Submit</button>
+        </form>
     </section>
     <br>
     <hr>
