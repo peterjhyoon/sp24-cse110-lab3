@@ -56,10 +56,8 @@
         <br>
         <section id="funding">
             <h2>Funding</h2>
-            <span>
-                <p>This is some text.</p>
-                <p>Pivot product to take over <em>Y-Combinator</em> and <i>self-invest in ourselves.</i></p>
-            </span>
+            <p>This is some text.</p>
+            <p>Pivot product to take over <em>Y-Combinator</em> and <i>self-invest in ourselves.</i></p>
             <h3>Audio from Meeting with Investors</h3>
             <p>Below is the audio file from the recording with investors.</p>
             <audio controls>
@@ -70,10 +68,8 @@
         <br>
         <div class="follow-up">
             <h2>Questions</h2>
-            <span>
-                <p>Q: Why does none of this make sense?</p>
-                <p>A: I dunno.</p>
-            </span>
+            <p>Q: Why does none of this make sense?</p>
+            <p>A: I dunno.</p>
             <p>Q: Who is our competitor?</p>
             <span>
                 A: This guy
@@ -99,17 +95,17 @@
                 <label for="email">Email:</label>
                 <input type="text" id="email">
                 <br><br>
-                <label for="dob" id="dob">Date of Birth (for verification)</label>
-                <input type="date" id="dob">
+                <label for="dob">Date of Birth (for verification)</label>
+                <input type="date" name="dob" id="dob">
                 <br><br>
                 <label for="dept" id="dept">Department:</label>
                 <br>
-                <input type="radio" name="dept" id="dept" value="finance">IT
-                <input type="radio" name="dept" id="dept" value="it">Finance
-                <input type="radio" name="dept" id="dept" value="hr">None
+                <input type="radio" name="dept" value="finance">IT
+                <input type="radio" name="dept" value="it">Finance
+                <input type="radio" name="dept" value="hr">None
                 <br><br>
                 <label for="city">Office Location:</label>
-                <input type="text" id="city" name="city" list="cities">
+                <input type="text" name="city" list="cities">
                 <datalist id="cities">
                     <option value="San Diego">
                     <option value="New York">
