@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSE 110 Lab 2</title>
+    <title>CSE 110 Lab 3</title>
     <link rel="icon" href="https://instructure-uploads.s3.amazonaws.com/account_131710000000000001/attachments/879/favicon.ico" type="image/x-icon">
     <style>
         /* styling using style tags */
@@ -48,7 +48,7 @@
         <section id="recruit">
             <h2>Recruiting</h2>
             <h3>HR Video</h3>
-            <video controls id="testVideo" autoplay>
+            <video controls id="testVideo">
                 <source src="src/test_video.mov" type="video/mp4">
             </video>
             <p>Current <strong>OPEN positions</strong> on the team (bold are to be filled ASAP)</p>
@@ -74,21 +74,22 @@
             <!-- <video src="src/test_video.mov" type="video/mov"></video> -->
         </section>
         <br>
-        <div class="follow-up">
+        <section class="follow-up">
             <h2>Questions</h2>
-            <p>Q: Why does none of this make sense?</p>
-            <p>A: I dunno.</p>
-            <p>Q: Who is our competitor?</p>
-            <span>
-                A: This guy
-                <img src="src/gpt_img.png" alt="gpt_image">
-            </span>
-            
+            <div id="follow-up-q">
+                <p>Q: Why does none of this make sense?</p>
+                <p>A: I dunno.</p>
+                <p>Q: Who is our competitor?</p>
+                <span>
+                    A: This guy
+                    <img src="src/gpt_img.png" id="comp_img" alt="gpt_image">
+                </span>
+            </div>
             <details>
                 <summary>Click to view details!</summary>
                 <p>details</p>
             </details>
-        </div>
+        </section>
     </main>
     <br>
     <section id="survey">
@@ -138,7 +139,8 @@
                     <option value="antartica">Antartica</option>
                 </select><br><br>
             </fieldset>
-            <button type="submit">Submit</button>
+            <br>
+            <button type="submit" class="btn">Submit</button>
         </form>
     </section>
     <br>
