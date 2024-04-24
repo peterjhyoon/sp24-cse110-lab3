@@ -1,3 +1,3 @@
-# Lab 2 - Starter
+# Lab 3
 
-Link: https://peterjhyoon.github.io/Lab2_Starter/
+Link: https://peterjhyoon.github.io/sp24-cse110-lab3
