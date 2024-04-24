@@ -49,11 +49,23 @@ h1, h2, h3 {
 
 h1 {
     font-size: 50px;
-    color: color(display-p3 0.8 0.3 0.4 / 0.8);
+    color: color(rgba 0.8 0.3 0.4 / 0.8);
 }
 
 h2 {
-    color: color-mix(in lab, blue 50%, red 50%);
+    color: color-mix(in srgb, blue 50%, red 50%);
+}
+
+h2~p {
+    color: green;
+}
+
+h2+p {
+    color: blue;
+}
+
+p.question {
+    color: darkmagenta;
 }
 
 header {
@@ -146,10 +158,8 @@ div:has(span) {
     border: 1px solid lightgray;
 }
 
-main {
-    section > h2 {
-        color: #555;
-    }
+main section > h2 {
+    color: #555;
 }
 
 .agenda ol > li {
